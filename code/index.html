@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<canvas id="canvas"></canvas>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>ICG : Procedural Terrain</title>
+	<meta name="author" content="Krzysztof Lis">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="src/main_terrain.js" type="module"></script>
+
+<div id="debug-overlay">
+	<p>
+		<!-- <a href="src/main.js">source</a>  -->
+		<u><b>ICG Project: Emmental</b></u>
+		<br>
+		⁙⁙ Mouse: drag to rotate, shift+drag to move
+		<br>
+		⁙⁙ Scroll to zoom
+		<br>
+		⁙⁙ Show/hide <strong class="keyboard">z</strong>
+		<br>
+		⁙⁙ Panning <strong class="keyboard">w</strong>,<strong class="keyboard">s</strong>,<strong class="keyboard">a</strong>,<strong class="keyboard">d</strong>
+		<br>
+		⁙⁙ Move in and out <strong class="keyboard">q</strong>,<strong class="keyboard">e</strong>
+		<br>
+	</p>
+	<p id="view-options">
+		<span id="btn-preset-view" class="button">Preset view <strong class="keyboard">c</strong></span>
+	</p>
+	<p id="sliders">
+		Resolution : <input type="range" min="10" max="100" class="slider" id="size">
+		<output id="size"></output><br>
+		Scale &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <input type="range" min="1" max="20" class="slider" id="scale">
+		<label id="size"></label><br>
+		Noise &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <input type="range" min="-15" max="15" class="slider" id="change">
+		<label id="size"></label><br>
+		Threshold &nbsp: <input type="range" min="-0.5" max="0.5" step="0.05" class="slider" id="threshold">
+		<label id="size"></label><br>
+		<br>
+		<input type="checkbox" id="only_sphere"> Sphere
+		<br>
+		<br>
+		<input type="button" id="recompute" value="Click to recompute">
+	      
+    </p>
+
+	<pre id="debug-text"></pre>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+[0m2021.05.25 16:44:54 INFO  Started: Metals version 0.10.3 in workspace 'C:\Users\elisa\Documents\GitHub\CompGraph\Project' for client Visual Studio Code 1.56.2.[0m
+[0m2021.05.25 16:44:57 INFO  time: initialize in 2.72s[0m
+[0m2021.05.25 16:44:57 WARN  Build server is not auto-connectable.[0m
+[0m2021.05.25 16:44:57 WARN  no build tool detected in workspace 'C:\Users\elisa\Documents\GitHub\CompGraph\Project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.05.25 16:57:25 INFO  shutting down Metals[0m
